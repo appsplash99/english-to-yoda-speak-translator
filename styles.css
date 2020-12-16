@@ -1,7 +1,31 @@
+/* Importing Static fonts */
+/* StarWars Jedi - normal font */
+@font-face {
+  font-family: 'StarJedi-normal';
+  src: URL('static/font/starjedi/Starjedi-normal.ttf') format('truetype');
+}
+
+/* StarWars Jedi - hollow font */
+@font-face {
+  font-family: 'StarJedi-hollow';
+  src: URL('static/font/starjedi/Starjedi-hollow.ttf') format('truetype');
+}
+
+:root {
+  /* Set neon color */
+  /* Star Wars Color Theme */
+  --background-color: #1c1f2a;
+  --label-color: #B58150;
+  --red: #e4002b;
+  --blue: #0D5AA0;
+  --grey: #d9e1e2;
+  --browm: #7D4016;
+}
+
 body {
   font-family: 'BioRhyme', serif;
   font-size: 1.5rem;
-  background-color: #F2C94C;
+  background-color: var(--background-color);
   text-align: center;
   justify-content: center;
   margin: 1rem;
@@ -16,36 +40,27 @@ body {
   margin-bottom: 80px;
 }
 
-/* css style to curve border */
-.has-border {
-  border-color: black;
-  border-style: 10px solid;
+/* Star Wars Border */
+.star-wars-border {
+  border: 8px solid var(--red);
+  border-radius: 10px;
 }
 
-.curve-all-edges {
-  border-radius: 1rem;
-}
-
-.curve-top-edge-only {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-}
-
-.curve-bottom-edge-only {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-
-/* Minion Image */
-#minion-img {
+/* Yoda Image */
+#yoda-img {
   display: block;
   object-fit: cover;
   background-repeat: no-repeat;
-  height: 60vh;
-  width: 100%;
+  height: 50vh;
+  width: auto;
   margin: 1rem auto;
-  margin-top: 0px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+#yoda-icon {
+  height: 25px;
 }
 
 #main-app {
@@ -55,11 +70,10 @@ body {
 
 /* Translate Button */
 #btn-translate {
-  background-color: black;
+  background-color: var(--label-color);
   border-color: black;
-  color: white;
+  color: black;
   font-size: 1.6rem;
-  /* margin: 1rem; */
   padding: 1rem 2rem;
   border-radius: 0.5rem;
   width: 50%;
@@ -70,7 +84,6 @@ body {
 #txt-input {
   font-family: 'Caveat', cursive;
   display: block;
-  border: 2px solid;
   font-size: 1.6rem;
   height: 20vh;
   max-width: 100%;
@@ -84,10 +97,9 @@ body {
   font-size: 1.6rem;
   font-family: 'Caveat', cursive;
   background: white;
-  border: 2px solid;
   display: block;
   height: 20vh;
-  margin: 0px auto 10px auto;
+  margin: 0px auto;
   padding: 1rem;
   text-align: left;
   font-style: normal;
@@ -95,16 +107,17 @@ body {
 
 /* Title */
 .title-style {
+  font-family: StarJedi-normal;
   display: block;
-  color: white;
-  background: black;
+  background-color: black;
+  color: var(--grey);
   margin: 0 auto;
   padding: 1rem;
 }
 
 /* Box Labels Style */
 .box-labels {
-  background: rgb(38, 65, 218);
+  background: var(--label-color);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin: 0 auto;
@@ -114,25 +127,23 @@ body {
 #made-by {
   background: white;
   margin: 0 auto;
-  margin-top: 20px;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 #socials-container {
-  background: white;
   height: auto;
-  padding: 0px 0px 20px 0px;
   margin: 0 auto;
   margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 #social-links {
-  background: white;
+  background: var(--red);
   display: flex;
   justify-content: space-evenly;
   gap: 15px;
   flex-wrap: wrap;
-  padding: 20px 100px 10px 100px;
+  padding: 20px 50px 10px 50px;
 }
 
 #social-links img {
@@ -140,10 +151,11 @@ body {
 }
 
 /* Mobile View */
-@media (max-width: 530px) {
+@media (max-width: 640px) {
   .title-style {
     font-size: 1.9rem;
   }
+
   #btn-translate {
     font-size: 1rem;
     padding: 1rem 0px 1rem 0px;

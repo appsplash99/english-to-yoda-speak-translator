@@ -6,10 +6,10 @@ var txtInput = document.querySelector("#txt-input");
 
 // refrence to element with id output-box
 var outputBox = document.querySelector("#output-box");
-outputBox.innerText = "Bananaaaaaaa....";  // shows by default
+outputBox.innerText = "Yoda, I am....";  // shows by default
 
-// minion url
-var serverURL = "https://api.funtranslations.com/translate/minion.json";
+// yoda url
+var serverURL = "https://api.funtranslations.com/translate/yoda.json";
 
 // convert into desired url
 function getTranslationURL(text) {

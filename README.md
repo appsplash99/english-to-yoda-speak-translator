@@ -1,13 +1,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-    <h1 align="center">⌨️ English to Minion Speak Translator</h1>
+    <h1 align="center">⌨️ English to Yoda Translator</h1>
 
   <p align="center">
-    Translate English to Banana Language
+    Translate English to Yoda Language
     <img src="https://devicons.github.io/devicon/devicon.git/icons/javascript/javascript-original.svg" alt="Javascript Logo" width="20" height="20"/> and :heart:.
     <br />
-    <a href="https://eng-to-minion-translator.netlify.app" target="blank">:rocket: Play It Here</a>
+    <!-- TODO: -->
+    <a href="" target="blank">:rocket: Play It Here</a>
   </p>
 </p>
 
@@ -27,16 +28,14 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<img align="center" src="static/images/yoda-speak-image.png" alt="yoda-translator-image" height="500px" /></a>
 
-<a href="/app_screenshot.jpg" target="blank"><img align="center" src="static/minion-translator-image.png" alt="minion-translator-image" height="500px" /></a>
+English to Yoda Speak Translator is a simple web app which translates plain english into Yoda speak language.
 
-English to Minion Speak Translator is a simple web app which translates plain english into minion speak language.
-
-The api used behind the scenes is sourced from [funtranslations.com](https://funtranslations.com/minion).
+The api used behind the scenes is sourced from [funtranslations.com](https://funtranslations.com/yoda).
 
 
 <!-- GETTING STARTED -->
@@ -44,14 +43,14 @@ The api used behind the scenes is sourced from [funtranslations.com](https://fun
 
 This web app is built with Vanilla JS and hosted on netlify.
 
-Here is more on the [API](https://funtranslations.com/api/minion).
+Here is more on the [API](https://funtranslations.com/api/yoda).
 
 
 <!-- CONTACT -->
 ## Connect
 
 <p style="color: blue;" align="left">
-    <a href="https://hashnode.com/@appsplash99" target="blank"><img align="center" src="static/hashnode.png" alt="appsplash99  Blog" height="35" width="35" /></a>
+    <a href="https://hashnode.com/@appsplash99" target="blank"><img align="center" src="static/images/hashnode.png" alt="appsplash99  Blog" height="35" width="35" /></a>
     <a href="https://twitter.com/ApurvChimralwar" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="twitter appsplash99" height="35" width="35" /></a>
     <a href="https://in.linkedin.com/in/ApurvChimralwar" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="linkedin appsplash99" height="35" width="35" /></a>        
 </p>
