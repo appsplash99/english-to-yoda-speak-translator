@@ -151,11 +151,14 @@ body {
 }
 
 /* Mobile View */
-@media (max-width: 640px) {
+@media (max-width: 530px) {
+  body {
+    width: 90vw;
+    margin: 0 0;
+  }
   .title-style {
     font-size: 1.9rem;
   }
-
   #btn-translate {
     font-size: 1rem;
     padding: 1rem 0px 1rem 0px;
